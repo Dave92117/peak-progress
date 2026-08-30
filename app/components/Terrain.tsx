@@ -7,3 +7,9 @@ const MAX_VOLUME = 1000;
 export const volumeToY = (volume: number): number => {
   return CHART_HEIGHT - (volume / MAX_VOLUME) * CHART_HEIGHT;
 };
+
+const WEEK_WIDTH = 150;
+
+export const indexToX = (index: number): number => {
+  return index * WEEK_WIDTH;
+};
